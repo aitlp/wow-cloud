@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wow.system.api.factory.RemoteUserFallbackFactory,\
+  com.wow.system.api.factory.RemoteLogFallbackFactory, \
+  com.wow.system.api.factory.RemoteFileFallbackFactory

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.wow.common.security.service.TokenService,\
+  com.wow.common.security.aspect.PreAuthorizeAspect,\
+  com.wow.common.security.handler.GlobalExceptionHandler
