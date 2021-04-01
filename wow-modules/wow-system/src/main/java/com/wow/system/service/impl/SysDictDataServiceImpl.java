@@ -1,13 +1,12 @@
 package com.wow.system.service.impl;
 
 import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import com.wow.system.domain.SysDictData;
 import com.wow.system.mapper.SysDictDataMapper;
 import com.wow.system.service.ISysDictDataService;
 import com.wow.system.utils.DictUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * 字典 业务层处理

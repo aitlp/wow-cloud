@@ -2,8 +2,9 @@ package com.wow.system.mapper;
 
 import java.util.List;
 
-import com.wow.system.domain.SysDictType;
 import org.apache.ibatis.annotations.Mapper;
+
+import com.wow.system.domain.SysDictType;
 
 /**
  * 字典表 数据层

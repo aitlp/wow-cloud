@@ -2,8 +2,6 @@ package com.wow.system.service.impl;
 
 import java.util.List;
 
-import com.wow.system.mapper.SysPostMapper;
-import com.wow.system.mapper.SysUserPostMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +9,8 @@ import com.wow.common.core.constant.UserConstants;
 import com.wow.common.core.exception.CustomException;
 import com.wow.common.core.utils.StringUtils;
 import com.wow.system.domain.SysPost;
+import com.wow.system.mapper.SysPostMapper;
+import com.wow.system.mapper.SysUserPostMapper;
 import com.wow.system.service.ISysPostService;
 
 /**

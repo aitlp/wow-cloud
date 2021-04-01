@@ -5,8 +5,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import com.wow.system.mapper.SysRoleMenuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +18,7 @@ import com.wow.system.domain.SysRoleDept;
 import com.wow.system.domain.SysRoleMenu;
 import com.wow.system.mapper.SysRoleDeptMapper;
 import com.wow.system.mapper.SysRoleMapper;
+import com.wow.system.mapper.SysRoleMenuMapper;
 import com.wow.system.mapper.SysUserRoleMapper;
 import com.wow.system.service.ISysRoleService;
 

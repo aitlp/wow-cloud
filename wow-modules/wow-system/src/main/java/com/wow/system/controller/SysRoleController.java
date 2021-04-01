@@ -3,8 +3,6 @@ package com.wow.system.controller;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
-
-import com.wow.system.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,6 +23,7 @@ import com.wow.common.log.annotation.Log;
 import com.wow.common.log.enums.BusinessType;
 import com.wow.common.security.annotation.PreAuthorize;
 import com.wow.system.api.domain.SysRole;
+import com.wow.system.service.ISysRoleService;
 
 /**
  * 角色信息

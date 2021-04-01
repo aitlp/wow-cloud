@@ -3,8 +3,6 @@ package com.wow.system.controller;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
-
-import com.wow.system.service.ISysOperLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +19,7 @@ import com.wow.common.log.annotation.Log;
 import com.wow.common.log.enums.BusinessType;
 import com.wow.common.security.annotation.PreAuthorize;
 import com.wow.system.api.domain.SysOperLog;
+import com.wow.system.service.ISysOperLogService;
 
 /**
  * 操作日志记录

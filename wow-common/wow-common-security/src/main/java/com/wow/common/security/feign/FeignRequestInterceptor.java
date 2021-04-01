@@ -2,6 +2,7 @@ package com.wow.common.security.feign;
 
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
+import com.wow.common.core.utils.ip.IpUtils;
 import org.springframework.stereotype.Component;
 import com.wow.common.core.constant.CacheConstants;
 import com.wow.common.core.utils.ServletUtils;
@@ -40,6 +41,9 @@ public class FeignRequestInterceptor implements RequestInterceptor
             {
                 requestTemplate.header(CacheConstants.AUTHORIZATION_HEADER, authentication);
             }
+
+            // 配置客户端IP
+            requestTemplate.header("X-Forwarded-For", IpUtils.getIpAddr(ServletUtils.getRequest()));
         }
     }
 }

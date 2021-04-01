@@ -2,11 +2,6 @@ package com.wow.system.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.wow.system.domain.SysUserPost;
-import com.wow.system.domain.SysUserRole;
-import com.wow.system.service.ISysConfigService;
-import com.wow.system.service.ISysUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +15,15 @@ import com.wow.common.datascope.annotation.DataScope;
 import com.wow.system.api.domain.SysRole;
 import com.wow.system.api.domain.SysUser;
 import com.wow.system.domain.SysPost;
+import com.wow.system.domain.SysUserPost;
+import com.wow.system.domain.SysUserRole;
 import com.wow.system.mapper.SysPostMapper;
 import com.wow.system.mapper.SysRoleMapper;
 import com.wow.system.mapper.SysUserMapper;
 import com.wow.system.mapper.SysUserPostMapper;
 import com.wow.system.mapper.SysUserRoleMapper;
+import com.wow.system.service.ISysConfigService;
+import com.wow.system.service.ISysUserService;
 
 /**
  * 用户 业务层处理

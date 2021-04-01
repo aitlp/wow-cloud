@@ -1,8 +1,6 @@
 package com.wow.system.controller;
 
 import java.io.IOException;
-
-import com.wow.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import com.wow.common.core.constant.UserConstants;
 import com.wow.common.core.domain.R;
 import com.wow.common.core.utils.SecurityUtils;
 import com.wow.common.core.utils.ServletUtils;
@@ -25,6 +24,7 @@ import com.wow.system.api.RemoteFileService;
 import com.wow.system.api.domain.SysFile;
 import com.wow.system.api.domain.SysUser;
 import com.wow.system.api.model.LoginUser;
+import com.wow.system.service.ISysUserService;
 
 /**
  * 个人信息 业务处理
@@ -65,6 +65,16 @@ public class SysProfileController extends BaseController
     @PutMapping
     public AjaxResult updateProfile(@RequestBody SysUser user)
     {
+        if (StringUtils.isNotEmpty(user.getPhonenumber())
+                && UserConstants.NOT_UNIQUE.equals(userService.checkPhoneUnique(user)))
+        {
+            return AjaxResult.error("修改用户'" + user.getUserName() + "'失败，手机号码已存在");
+        }
+        else if (StringUtils.isNotEmpty(user.getEmail())
+                && UserConstants.NOT_UNIQUE.equals(userService.checkEmailUnique(user)))
+        {
+            return AjaxResult.error("修改用户'" + user.getUserName() + "'失败，邮箱账号已存在");
+        }
         if (userService.updateUserProfile(user) > 0)
         {
             LoginUser loginUser = tokenService.getLoginUser();

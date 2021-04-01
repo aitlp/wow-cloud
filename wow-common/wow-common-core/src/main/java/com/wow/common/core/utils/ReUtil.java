@@ -8,7 +8,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.wow.common.core.text.Convert;
-import com.wow.common.core.utils.StringUtils;
 
 public class ReUtil
 {

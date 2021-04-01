@@ -2,14 +2,13 @@ package com.wow.system.service.impl;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import com.wow.system.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wow.system.api.domain.SysUser;
 import com.wow.system.service.ISysMenuService;
 import com.wow.system.service.ISysPermissionService;
+import com.wow.system.service.ISysRoleService;
 
 @Service
 public class SysPermissionServiceImpl implements ISysPermissionService

@@ -2,19 +2,18 @@ package com.wow.system.service.impl;
 
 import java.util.List;
 import javax.annotation.PostConstruct;
-
-import com.wow.system.domain.SysDictData;
-import com.wow.system.domain.SysDictType;
-import com.wow.system.mapper.SysDictDataMapper;
-import com.wow.system.mapper.SysDictTypeMapper;
-import com.wow.system.utils.DictUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.wow.common.core.constant.UserConstants;
 import com.wow.common.core.exception.CustomException;
 import com.wow.common.core.utils.StringUtils;
+import com.wow.system.domain.SysDictData;
+import com.wow.system.domain.SysDictType;
+import com.wow.system.mapper.SysDictDataMapper;
+import com.wow.system.mapper.SysDictTypeMapper;
 import com.wow.system.service.ISysDictTypeService;
+import com.wow.system.utils.DictUtils;
 
 /**
  * 字典 业务层处理

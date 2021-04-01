@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import com.wow.system.domain.vo.TreeSelect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.wow.common.core.constant.UserConstants;
@@ -14,6 +12,7 @@ import com.wow.common.core.utils.StringUtils;
 import com.wow.common.datascope.annotation.DataScope;
 import com.wow.system.api.domain.SysDept;
 import com.wow.system.api.domain.SysRole;
+import com.wow.system.domain.vo.TreeSelect;
 import com.wow.system.mapper.SysDeptMapper;
 import com.wow.system.mapper.SysRoleMapper;
 import com.wow.system.service.ISysDeptService;

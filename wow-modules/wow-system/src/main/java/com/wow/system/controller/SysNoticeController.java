@@ -1,9 +1,6 @@
 package com.wow.system.controller;
 
 import java.util.List;
-
-import com.wow.system.domain.SysNotice;
-import com.wow.system.service.ISysNoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,6 +18,8 @@ import com.wow.common.core.web.page.TableDataInfo;
 import com.wow.common.log.annotation.Log;
 import com.wow.common.log.enums.BusinessType;
 import com.wow.common.security.annotation.PreAuthorize;
+import com.wow.system.domain.SysNotice;
+import com.wow.system.service.ISysNoticeService;
 
 /**
  * 公告 信息操作处理

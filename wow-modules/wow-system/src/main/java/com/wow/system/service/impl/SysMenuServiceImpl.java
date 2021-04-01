@@ -8,8 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.wow.system.mapper.SysRoleMenuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.wow.common.core.constant.UserConstants;
@@ -23,6 +21,7 @@ import com.wow.system.domain.vo.RouterVo;
 import com.wow.system.domain.vo.TreeSelect;
 import com.wow.system.mapper.SysMenuMapper;
 import com.wow.system.mapper.SysRoleMapper;
+import com.wow.system.mapper.SysRoleMenuMapper;
 import com.wow.system.service.ISysMenuService;
 
 /**

@@ -1,10 +1,10 @@
 package com.wow.system.service.impl;
 
-import com.wow.system.domain.SysUserOnline;
-import com.wow.system.service.ISysUserOnlineService;
 import org.springframework.stereotype.Service;
 import com.wow.common.core.utils.StringUtils;
 import com.wow.system.api.model.LoginUser;
+import com.wow.system.domain.SysUserOnline;
+import com.wow.system.service.ISysUserOnlineService;
 
 /**
  * 在线用户 服务层处理

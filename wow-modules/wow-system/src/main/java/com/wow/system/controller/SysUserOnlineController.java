@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-import com.wow.system.domain.SysUserOnline;
-import com.wow.system.service.ISysUserOnlineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +20,8 @@ import com.wow.common.log.enums.BusinessType;
 import com.wow.common.redis.service.RedisService;
 import com.wow.common.security.annotation.PreAuthorize;
 import com.wow.system.api.model.LoginUser;
+import com.wow.system.domain.SysUserOnline;
+import com.wow.system.service.ISysUserOnlineService;
 
 /**
  * 在线用户监控

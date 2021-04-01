@@ -1,12 +1,11 @@
 package com.wow.system.service.impl;
 
 import java.util.List;
-
-import com.wow.system.mapper.SysOperLogMapper;
-import com.wow.system.service.ISysOperLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.wow.system.api.domain.SysOperLog;
+import com.wow.system.mapper.SysOperLogMapper;
+import com.wow.system.service.ISysOperLogService;
 
 /**
  * 操作日志 服务层处理

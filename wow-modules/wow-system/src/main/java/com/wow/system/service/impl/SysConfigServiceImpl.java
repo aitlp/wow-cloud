@@ -3,9 +3,6 @@ package com.wow.system.service.impl;
 import java.util.Collection;
 import java.util.List;
 import javax.annotation.PostConstruct;
-
-import com.wow.system.mapper.SysConfigMapper;
-import com.wow.system.service.ISysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.wow.common.core.constant.Constants;
@@ -15,6 +12,8 @@ import com.wow.common.core.text.Convert;
 import com.wow.common.core.utils.StringUtils;
 import com.wow.common.redis.service.RedisService;
 import com.wow.system.domain.SysConfig;
+import com.wow.system.mapper.SysConfigMapper;
+import com.wow.system.service.ISysConfigService;
 
 /**
  * 参数配置 服务层实现

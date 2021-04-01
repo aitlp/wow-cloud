@@ -5,10 +5,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletResponse;
-
-import com.wow.system.service.ISysPermissionService;
-import com.wow.system.service.ISysRoleService;
-import com.wow.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -34,7 +30,10 @@ import com.wow.common.security.annotation.PreAuthorize;
 import com.wow.system.api.domain.SysRole;
 import com.wow.system.api.domain.SysUser;
 import com.wow.system.api.model.LoginUser;
+import com.wow.system.service.ISysPermissionService;
 import com.wow.system.service.ISysPostService;
+import com.wow.system.service.ISysRoleService;
+import com.wow.system.service.ISysUserService;
 
 /**
  * 用户信息
